@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #dedede;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.web-logo {
+    width: 60px;
+}
+
+.contact-link {
+    color: white;
+    background-color: rgb(31, 30, 30);
+    border: 1px solid rgb(31, 30, 30);
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.link-active {
+    color: rgb(31, 30, 30);
+    font-weight: bold;
+}
+
+.link {
+    color: black;
+}
+
+.contact-section {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #cacaca;
+}
+.contact-form {
+    width: 400px;
+    font-family: 'Poppins', sans-serif;
+   
+    padding: 30px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    border-radius: 5px;
+    border: 1px solid #cacaca;
+    padding: 10px;
+}
+
+.form-submit {
+    color: white;
+    border: 1px solid orangered;
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 5px 20px;
+    float: right;
+}

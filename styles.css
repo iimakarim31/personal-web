@@ -1,0 +1,211 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+nav {
+    background-color: #dedede;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.web-logo {
+    width: 60px;
+}
+
+.contact-link {
+    color: white;
+    background-color: rgb(31, 30, 30);
+    border: 1px solid rgb(31, 30, 30);
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.link-active {
+    color: rgb(31, 30, 30);
+    font-weight: bold;
+}
+
+.link {
+    color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 50%; 
+  padding: 50px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%; 
+}
+
+.text-content {
+  flex: 1; 
+  margin-right: 20px; 
+  text-align: left; 
+}
+
+.text-content h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.text-content p {
+  color: #4a5568;
+  margin-bottom: 36px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.contact {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 16px;
+  margin-bottom: 36px;
+}
+
+
+.download {
+  background-color: transparent;
+    color: #333333;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.download i {
+  margin-left: 8px;
+}
+
+.icon {
+  display: flex;
+  justify-content: left;
+  gap: 16px;
+}
+
+.icon a {
+  margin: 0 10px;
+  display: inline-block;
+  color: #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 36px;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+
+.social-link {
+  color: #000000;
+  font-size: 36px;
+}
+
+
+.card {
+  flex-shrink: 0; 
+  width: 300px; 
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.profile-info p {
+  color: #718096;
+  margin: 8px 0 0;
+}
+
+
+/* RESPONSIVE: Layout card pindah ke bawah */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Ubah jadi vertikal */
+    padding: 20px;
+  }
+
+  .content {
+    flex-direction: column; /* Susun vertikal konten */
+    text-align: center;
+  }
+
+  .text-content {
+    margin-right: 0;
+    margin-bottom: 20px; /* Jarak bawah teks */
+    text-align: center;
+  }
+
+  .card {
+    width: 100%; /* Lebar penuh di layar kecil */
+    max-width: 300px; /* Batasi ukuran maksimum */
+    margin-top: 20px; /* Tambahkan jarak atas */
+  }
+}
