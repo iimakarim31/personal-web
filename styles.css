@@ -1,64 +1,57 @@
 body {
-  font-family: 'Inter', sans-serif;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f9f9f9;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
 nav {
-    background-color: #dedede;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
+  background-color: #dedede;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
 }
 
 nav a {
-    font-size: 20px;
-    text-decoration: none;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .navbar-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
 .web-logo {
-    width: 60px;
+  width: 60px;
 }
 
 .contact-link {
-    color: white;
-    background-color: rgb(31, 30, 30);
-    border: 1px solid rgb(31, 30, 30);
-    border-radius: 5px;
-    padding: 5px 20px;
+  color: white;
+  background-color: rgb(31, 30, 30);
+  border: 1px solid rgb(31, 30, 30);
+  border-radius: 5px;
+  padding: 5px 20px;
 }
 
 .link-active {
-    color: rgb(31, 30, 30);
-    font-weight: bold;
+  color: rgb(31, 30, 30);
+  font-weight: bold;
 }
 
 .link {
-    color: black;
+  color: black;
 }
 
 .container {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
-  max-width: 50%; 
+  max-width: 50%;
   padding: 50px;
   margin: 50px auto;
   background-color: #fff;
@@ -69,14 +62,14 @@ nav a {
 .content {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
-  width: 100%; 
+  align-items: center;
+  width: 100%;
 }
 
 .text-content {
-  flex: 1; 
-  margin-right: 20px; 
-  text-align: left; 
+  flex: 1;
+  margin-right: 20px;
+  text-align: left;
 }
 
 .text-content h1 {
@@ -107,15 +100,14 @@ nav a {
   margin-bottom: 36px;
 }
 
-
 .download {
   background-color: transparent;
-    color: #333333;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+  color: #333333;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .download i {
@@ -148,10 +140,9 @@ nav a {
   font-size: 36px;
 }
 
-
 .card {
-  flex-shrink: 0; 
-  width: 300px; 
+  flex-shrink: 0;
+  width: 300px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -183,7 +174,6 @@ nav a {
   color: #718096;
   margin: 8px 0 0;
 }
-
 
 /* RESPONSIVE: Layout card pindah ke bawah */
 @media (max-width: 768px) {
