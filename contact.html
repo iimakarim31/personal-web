@@ -10,23 +10,40 @@
   </head>
   <body>
     <nav>
-      <div class="navbar-left">
-        <a href="#">
-          <img class="web-logo" src="logo.png" alt="web logo" />
-        </a>
-        <ul class="navbar-links">
-          <li>
-            <a href="index.html" class="link">Home</a>
-          </li>
-          <li>
-            <a href="blog.html" class="link">Blog</a>
-          </li>
-        </ul>
+      <div class="nav-container">
+        <div class="navbar-left">
+          <a href="index.html">
+            <img class="web-logo" src="assets/Ak.png" alt="web logo" />
+          </a>
+          <ul class="navbar-links">
+            <li>
+              <a href="index.html" class="link-active">Home</a>
+            </li>
+            <li>
+              <a href="blog.html" class="link">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-right">
+          <a href="contact.html" class="contact-link">Contact Me</a>
+        </div>
+        <div class="hamburger-container">
+          <button
+            type="button"
+            id="hamburgerButton"
+            class="contact-link hamburger-button"
+          >
+            ☰
+          </button>
+        </div>
       </div>
 
-      <div class="navbar-right">
-        <a href="contact.html" class="contact-link">Contact Me</a>
-      </div>
+      <ul id="menuList" class="hamburger-menu-list hide-menu">
+        <li>Home</li>
+        <li>Blog</li>
+        <li>Contact Me</li>
+      </ul>
     </nav>
     <main class="contact-section">
       <form id="contactForm" class="contact-form">
@@ -102,6 +119,6 @@
     </main>
 
     <script src="submitForm.js"></script>
-    <script src="belajar-js.js"></script>
+    <script src="navbar.js"></script>
   </body>
 </html>

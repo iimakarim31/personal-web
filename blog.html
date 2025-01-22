@@ -11,23 +11,40 @@
   </head>
   <body>
     <nav>
-      <div class="navbar-left">
-        <a href="#">
-          <img class="web-logo" src="logo.png" alt="web logo" />
-        </a>
-        <ul class="navbar-links">
-          <li>
-            <a href="index.html" class="link">Home</a>
-          </li>
-          <li>
-            <a href="blog.html" class="link-active">Blog</a>
-          </li>
-        </ul>
+      <div class="nav-container">
+        <div class="navbar-left">
+          <a href="index.html">
+            <img class="web-logo" src="assets/Ak.png" alt="web logo" />
+          </a>
+          <ul class="navbar-links">
+            <li>
+              <a href="index.html" class="link-active">Home</a>
+            </li>
+            <li>
+              <a href="blog.html" class="link">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-right">
+          <a href="contact.html" class="contact-link">Contact Me</a>
+        </div>
+        <div class="hamburger-container">
+          <button
+            type="button"
+            id="hamburgerButton"
+            class="contact-link hamburger-button"
+          >
+            ☰
+          </button>
+        </div>
       </div>
 
-      <div class="navbar-right">
-        <a href="contact.html" class="contact-link">Contact Me</a>
-      </div>
+      <ul id="menuList" class="hamburger-menu-list hide-menu">
+        <li>Home</li>
+        <li>Blog</li>
+        <li>Contact Me</li>
+      </ul>
     </nav>
 
     <main>
@@ -90,8 +107,10 @@
       <hr />
 
       <section class="blog-container">
+        <h1 class="section-title">My Blogs</h1>
         <div id="blogList" class="blog-list">
-          <div class="blog-list-item">
+          <p style="text-align: center">Belum ada blog yang dipost</p>
+          <!-- <div class="blog-list-item">
             <div class="blog-image">
               <img src="assets/blog.jpg" alt="blog-image" />
             </div>
@@ -115,11 +134,12 @@
               </p>
               <p class="relative-time">5 months ago</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
 
     <script src="blog.js"></script>
+    <script src="navbar.js"></script>
   </body>
 </html>

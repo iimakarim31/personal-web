@@ -5,65 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
 
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
     <link rel="icon" href="operator.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="global-font.css" />
   </head>
   <body>
     <nav>
-      <div class="navbar-left">
-        <a href="#">
-          <img class="web-logo" src="logo.png" alt="web logo" />
-        </a>
-        <ul class="navbar-links">
-          <li>
-            <a href="index.html" class="link-active">Home</a>
-          </li>
-          <li>
-            <a href="blog.html" class="link">Blog</a>
-          </li>
-        </ul>
+      <div class="nav-container">
+        <div class="navbar-left">
+          <a href="index.html">
+            <img class="web-logo" src="assets/Ak.png" alt="web logo" />
+          </a>
+          <ul class="navbar-links">
+            <li>
+              <a href="index.html" class="link-active">Home</a>
+            </li>
+            <li>
+              <a href="blog.html" class="link">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-right">
+          <a href="contact.html" class="contact-link">Contact Me</a>
+        </div>
+        <div class="hamburger-container">
+          <button
+            type="button"
+            id="hamburgerButton"
+            class="contact-link hamburger-button"
+          >
+            ☰
+          </button>
+        </div>
       </div>
 
-      <div class="navbar-right">
-        <a href="contact.html" class="contact-link">Contact Me</a>
-      </div>
+      <ul id="menuList" class="hamburger-menu-list hide-menu">
+        <li>Home</li>
+        <li>Blog</li>
+        <li>Contact Me</li>
+      </ul>
     </nav>
-    <div class="container">
-      <div class="content">
-        <div class="text-content">
-          <h1><b>Hi Welcome to my hut</b></h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius ipsam
-            incidunt id temporibus voluptas, odit, quam praesentium adipisci
-            expedita vel error architecto voluptatibus necessitatibus. Libero
-            esse hic dolores molestiae unde? Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Eius sapiente officiis ut quam, a esse
-            perspiciatis, eos nemo rem vel sequi ab sunt rerum voluptatem, quas
-            quo nulla doloribus illum! lo
+    <main class="home-page">
+      <!-- Card Component -->
+      <section class="profile-section">
+        <div id="profileCard">
+          <img
+            src="assets/1.jpg"
+            style="width: 100%; border-radius: 15px"
+            alt=""
+          />
+
+          <h1>Iim Abdul Karim</h1>
+
+          <p class="paragraph-1" style="color: darkcyan; margin-bottom: 30px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            voluptate non minus corporis blanditiis officia iste necessitatibus
+            optio rem ipsum, vero neque dolores? Excepturi molestias alias
+            dolorum sint itaque dolore!
           </p>
-          <div class="button">
-            <button class="contact">Contact</button>
-            <a href="#" class="download-cv"
-              >Download CV<i class="fa fa-download"></i
-            ></a>
+
+          <p class="paragraph-2" style="color: darkcyan; margin-bottom: 30px">
+            Ipsum dolore officia eius sed quae tempora, nam cumque in quod
+            voluptates explicabo dicta aliquid repudiandae optio adipisci. Fuga,
+            provident animi.
+          </p>
+          <table
+            style="
+              border: 1.5px solid #a8a8a8;
+              box-shadow: 0 0 4px #a8a8a8;
+              border-collapse: collapse;
+              width: 100%;
+            "
+          >
+            <tr>
+              <th style="border: 1px solid #a8a8a8">Experience</th>
+              <th style="border: 1px solid #a8a8a8">Year</th>
+            </tr>
+            <tr style="text-align: center">
+              <td style="border: 1px solid #a8a8a8">Personal Web</td>
+              <td style="border: 1px solid #a8a8a8">2024</td>
+            </tr>
+            <tr style="text-align: center">
+              <td style="border: 1px solid #a8a8a8">Mobile Apllication</td>
+              <td style="border: 1px solid #a8a8a8">2024</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section
+        class="about-section"
+        style="background-color: white; margin: 100px 0px"
+      >
+        <h2>About Me</h2>
+
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+
+        <div style="width: 200px">
+          <h2
+            style="
+              background: linear-gradient(to right, red, blue);
+              background-clip: text;
+              color: transparent;
+            "
+          >
+            My skill
+          </h2>
+        </div>
+      </section>
+      <!-- <div class="container">
+        <div class="content">
+          <div class="text-content">
+            <h1><b>Hi Welcome to my hut</b></h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+              ipsam incidunt id temporibus voluptas, odit, quam praesentium
+              adipisci expedita vel error architecto voluptatibus
+              necessitatibus. Libero esse hic dolores molestiae unde? Lorem
+              ipsum dolor, sit amet consectetur adipisicing elit. Eius sapiente
+              officiis ut quam, a esse perspiciatis, eos nemo rem vel sequi ab
+              sunt rerum voluptatem, quas quo nulla doloribus illum! lo
+            </p>
+            <div class="button">
+              <button class="contact">Contact</button>
+              <a href="#" class="download-cv"
+                >Download CV<i class="fa fa-download"></i
+              ></a>
+            </div>
+            <div class="icon">
+              <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+            </div>
           </div>
-          <div class="icon">
-            <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+          <div class="card">
+            <img src="assets/images.jpg" alt="Adolf" class="profile-pic" />
+            <div class="profile-info">
+              <h2>Adolf Hitler</h2>
+              <p>Leader of the Nazi Party (NSDAP)</p>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img src="./images.jpg" alt="Adolf" class="profile-pic" />
-          <div class="profile-info">
-            <h2>Adolf Hitler</h2>
-            <p>Leader of the Nazi Party (NSDAP)</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      </div> -->
+    </main>
+    <script src="navbar.js"></script>
   </body>
 </html>

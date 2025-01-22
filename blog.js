@@ -124,17 +124,37 @@ function formatDateToWIB(date) {
 
 function getRelativeTime(targetDate) {
   let now = new Date();
+  console.log("waktu sekarang :");
+  console.log(now);
+  console.log("waktu post: ");
+  console.log(targetDate);
+  let selisih = now - targetDate;
+  console.log("Selisih waktu: ");
+  console.log(selisih);
   let diffInSeconds = Math.floor((now - targetDate) / 1000);
 
   console.log(diffInSeconds);
 
   if (diffInSeconds < 60) {
-    return `${diffInSeconds} seconds ago`;
+    return `${diffInSeconds} second${diffInSeconds > 1 ? "s" : ""} ago`;
   }
 
   let diffInMinutes = Math.floor(diffInSeconds / 60);
 
   if (diffInMinutes < 60) {
-    return `${diffInMinutes} minutes ago`;
+    return `${diffInMinutes} minute${diffInMinutes > 1 ? "s" : ""} ago`;
   }
+
+  let diffInHours = Math.floor(diffInSeconds / 60);
+  if (diffInHours < 24) {
+    return `${diffInHours} hour${diffInHours > 1 ? "s" : ""} ago`;
+  }
+
+  let diffInDays = Math.floor(diffInSeconds / 24);
+  if (diffInDays < 7) {
+    return `${diffInDays} day${diffInDays > 1 ? "s" : ""} ago`;
+  }
+
+  let diffInMounth = Math.floor(diffInDays / 30);
+  return `${diffInMounth} mounth${diffInMounth > 1 ? "s" : ""} ago`;
 }
